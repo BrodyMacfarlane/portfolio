@@ -7,36 +7,28 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      comp: 'work'
+      comp: ''
     }
-    this.setAbout = this.setAbout.bind(this)
-    this.setWork = this.setWork.bind(this)
-    this.handleClick = this.handleClick.bind(this)
   }
-  handleClick(){
-    console.log(this.props)
-  }
-  setAbout(){
-    this.setState({comp: "about"})
-  }
-  setWork(){
-    this.setState({comp: "work"})
+  getPage = (data) => {
+    this.setState({comp: data})
+    console.log(this.state)
   }
   render() {
     return (
       <HashRouter>
-        <div className="App" onClick={this.handleClick}>
+        <div className="App">
           <div className="navBar">
-            <h1 className="title">BRODY MACFARLANE</h1>
+            <Link to="/about"><h1 className="title">BM</h1></Link>
             <div className="right-nav">
-              <div className="work"><Link onClick={this.setWork} id={this.state.comp === "work" ? "onComp" : null} to="/work">WORK</Link></div>
-              <div className="about"><Link onClick={this.setAbout} id={this.state.comp === "about" ? "onComp" : null} to="/about">ABOUT</Link></div>
+              <div className="work"><Link id={this.state.comp === "work" ? "onComp" : null} to="/work">WORK</Link></div>
+              <div className="about"><Link id={this.state.comp === "about" ? "onComp" : null} to="/about">ABOUT</Link></div>
             </div>
           </div>
             <div>
               <Redirect from="/" to="/work" />
-              <Route path='/work' component={Work} exact />
-              <Route path='/about' component={About} />
+              <Route path='/work' render={(routeProps) => (<Work pageCallback={this.getPage} {...routeProps} />)}/>
+              <Route path='/about' render={(routeProps) => (<About pageCallback={this.getPage} {...routeProps} />)}/>
             </div>
         </div>
       </HashRouter>

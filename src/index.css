@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 @font-face {
   font-family: Lombok;
   src: './assets/fonts/Lombok.otf'
@@ -34,6 +36,21 @@ body {
 
 .title {
   font-size: 48px;
+  font-family: Lombok;
+  color: #000;
+  opacity: 0.75;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border: 1px solid #000;
+  position: relative;
+  bottom: 25px;
+}
+
+.title:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 a {
@@ -54,7 +71,7 @@ a {
 }
 
 .component-container {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .projects {
@@ -87,4 +104,13 @@ a {
 
 .project:hover {
   opacity: 0.8;
+}
+
+.code-pic {
+  width: 45vw;
+}
+
+.about-content {
+  font-family: 'Open sans', sans-serif;
+  display: inline-flex;
 }

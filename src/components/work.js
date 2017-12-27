@@ -2,6 +2,12 @@ import React, { Component } from 'react'
 // import dive from '../assets/DV.jpg'
 
 export default class Work extends Component {
+    constructor(props){
+        super(props)
+    }
+    componentDidMount(){
+        this.props.pageCallback('work')
+    }
     render(){
         return (
             <div className="component-container">
@@ -12,7 +18,7 @@ export default class Work extends Component {
                     <a href="http://divemusic.io">
                         <div className="project dive-project">DV</div>
                     </a>
-                    <a href="http://github.com">
+                    <a href="http://github.com/BrodyMacfarlane/sky-weather">
                         <div className="project sky-project">SK</div>
                     </a>
                 </div>
