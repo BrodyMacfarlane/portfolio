@@ -34,23 +34,17 @@ body {
   padding: 50px 20px 50px 20px;
 }
 
-.title {
+.title-text {
   font-size: 48px;
   font-family: Lombok;
   color: #000;
-  opacity: 0.75;
   width: 100px;
   height: 100px;
   line-height: 100px;
   text-align: center;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   position: relative;
   bottom: 25px;
-}
-
-.title:hover {
-  opacity: 1;
-  text-decoration: underline;
 }
 
 a {
@@ -112,5 +106,55 @@ a {
 
 .about-content {
   font-family: 'Open sans', sans-serif;
-  display: inline-flex;
+  display: inline-block;
+}
+
+.about-text {
+  vertical-align: top;
+  width: 40%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.about-about {
+  text-align: right;
+  font-family: Lombok;
+}
+
+
+/* ANIMATION */
+svg {
+	position: absolute;
+	top: 75px;
+}
+
+svg line {
+	stroke-width: 2;
+	stroke: #000;
+	fill: none;
+  stroke-dasharray: 600;
+  /* transition: 1s ease-in-out; */
+  /* transition: all 1000ms cubic-bezier(0.935, 0.105, 0.120, 0.900); */
+  transition: all 800ms cubic-bezier(0.620, 0.165, 0.370, 0.765);
+}
+
+.right-ani, .left-ani {
+  stroke-dasharray: 100;
+}
+
+
+.title:hover svg .top-ani {
+	transform: translateX(250px);
+}
+
+.title:hover svg .right-ani {
+	transform: translateY(200px);
+}
+
+.title:hover svg .bot-ani {
+	transform: translateX(-250px);
+}
+
+.title:hover svg .left-ani {
+	transform: translateY(-200px);
 }
