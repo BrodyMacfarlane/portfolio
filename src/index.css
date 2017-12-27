@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Lombok;
+  src: './assets/fonts/Lombok.otf'
+}
+
+@font-face {
+  font-family: London;
+  src: './assets/fonts/London.ttf'
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  margin: 70px 100px 70px 100px;
+}
+
+.navBar {
+  font-family: Lombok;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-nav {
+  display: flex;
+}
+
+.right-nav > div {
+  padding: 50px 20px 50px 20px;
+}
+
+.title {
+  font-size: 48px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.right-nav a {
+  color: #000;
+  opacity: 0.5;
+}
+
+.right-nav a:hover {
+  opacity: 1;
+}
+
+#onComp {
+  opacity: 1;
+}
+
+.component-container {
+  padding-top: 100px;
+}
+
+.projects {
+  font-family: London;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-project {
+  background: url('./assets/images/DG.jpg');
+}
+
+.dive-project {
+  background: url('./assets/images/DV.jpg');
+}
+
+.sky-project {
+  background: url('./assets/images/SK.jpg');
+}
+
+.project {
+  font-size: 9vw;
+  color: #FFF;
+  line-height: 28vw;
+  text-align: center;
+  width: 25vw;
+  height: 25vw;
+  background-size: cover;
+}
+
+.project:hover {
+  opacity: 0.8;
+}
