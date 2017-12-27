@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 @font-face {
   font-family: Lombok;
   src: './assets/fonts/Lombok.otf'
@@ -74,6 +72,10 @@ a {
   justify-content: space-between;
 }
 
+.projects a {
+  box-shadow: 0px 10px 38px -12px rgba(0,0,0,0.43);
+}
+
 .date-project {
   background: url('./assets/images/DG.jpg');
 }
@@ -100,12 +102,22 @@ a {
   opacity: 0.8;
 }
 
+.project-title {
+  text-align: center;
+  font-family: Lombok;
+  background-color: #fbfbfb;
+  padding: 20px;
+  color: #1c1c1c;
+}
+
 .code-pic {
   width: 45vw;
 }
 
 .about-content {
-  font-family: 'Open sans', sans-serif;
+  font-size: 20px;
+  font-family: Helvetica Neue;
+  font-weight: 100;
   display: inline-block;
 }
 
