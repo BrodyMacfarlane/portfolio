@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HashRouter, Route, Link, Redirect} from 'react-router-dom';
+import {BrowserRouter, Route, Link, Redirect} from 'react-router-dom';
 import Work from './components/work';
 import About from './components/about';
 
@@ -16,7 +16,7 @@ class App extends Component {
   }
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <div className="App">
           <div className="navBar">
             <Link to="/about">
@@ -41,7 +41,7 @@ class App extends Component {
               <Route path='/about' render={(routeProps) => (<About pageCallback={this.getPage} {...routeProps} />)}/>
             </div>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
