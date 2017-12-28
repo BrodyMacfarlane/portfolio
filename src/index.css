@@ -1,11 +1,11 @@
 @font-face {
   font-family: Lombok;
-  src: './assets/fonts/Lombok.otf'
+  src: url(assets/fonts/Lombok.otf)
 }
 
 @font-face {
   font-family: London;
-  src: './assets/fonts/London.ttf'
+  src: url(assets/fonts/London.ttf)
 }
 
 body {
