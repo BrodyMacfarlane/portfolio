@@ -12,7 +12,7 @@ export default class Work extends Component {
         return (
             <div className="component-container">
                 <div className="projects">
-                    <a href="http://dategen.io">
+                    <a href="https://dategen.io">
                         <div className="project date-project">DG</div>
                         <div className="project-title">DATE GEN</div>
                     </a>
