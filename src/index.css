@@ -275,19 +275,23 @@ svg line {
     width: 80%;
   }
 
+  .projects a div {
+    box-shadow: 0px 10px 38px -12px rgba(0,0,0,0.43);
+  }
+
   .project {
     /* width: 80%;
     height: 100%; */
     margin: auto;
-    line-height: 400px;
-    font-size: 100px;
-    min-width: 400px;
-    min-height: 400px;
+    line-height: 350px;
+    font-size: 120px;
+    min-width: 300px;
+    min-height: 300px;
   }
 
   .project-title {
-    padding: 40px 0px 40px 0px;
-    width: 400px;
+    padding: 30px 0px 30px 0px;
+    width: 300px;
     margin: auto;
   }
 
