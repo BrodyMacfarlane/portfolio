@@ -15,7 +15,7 @@ body {
 }
 
 .App {
-  margin: 70px 100px 70px 100px;
+  margin: 70px 100px 0px 100px;
 }
 
 .navBar {
@@ -30,6 +30,29 @@ body {
 
 .right-nav > div {
   padding: 50px 20px 50px 20px;
+}
+
+/* FOOTER */
+.footer {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  border-top: 1px solid #dadada;
+}
+
+.footer i {
+  font-size: 50px;
+  padding: 0px 50px 0px 50px;
+  color: #dadada;
+}
+
+.fa-linkedin:hover {
+  color: #1178B3;
+}
+
+.fa-github:hover {
+  color: #25292E;
 }
 
 .title-text {
@@ -64,6 +87,7 @@ a {
 
 .component-container {
   padding-top: 50px;
+  margin-bottom: 50px;
 }
 
 .projects {
@@ -185,6 +209,24 @@ svg line {
 	transform: translateY(-200px);
 }
 
+
+/* RESUME ANIMATION */
+.resume-button {
+  color: #000;
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+  font-family: Lombok;
+  border: 1px solid #000;
+  transition: 0.1s ease-in-out;
+}
+.resume-button:hover {
+  transition: 0.2s ease-in-out;
+  background-color: #0C1628;
+  color: #FFF;
+}
+
+
 @media only screen and (max-width: 1200px) {
   .projects {
     flex-wrap: wrap;
@@ -200,6 +242,26 @@ svg line {
   .projects a:nth-child(3) {
     margin-left: 0px;
   }
+
+  .about-content {
+    display: block;
+    margin: auto;
+  }
+
+  .about-about {
+    text-align: center;
+  }
+
+  .about-text {
+    float: none;
+    width: 60%;
+    padding: 50px;
+  }
+
+  .code-pic {
+    width: 80%;
+  }
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -222,7 +284,7 @@ svg line {
     height: 100%; */
     margin: auto;
     line-height: 350px;
-    font-size: 140px;
+    font-size: 120px;
     min-width: 300px;
     min-height: 300px;
   }
@@ -265,23 +327,17 @@ svg line {
     margin-left: 0px;
   }
 
-  .about-content {
-    display: block;
-    margin: auto;
-  }
-
-  .about-about {
-    text-align: center;
-  }
-
   .about-text {
-    float: none;
-    width: 60%;
-    padding: 50px;
+    width: 80%;
+    padding: 0;
   }
 
   .code-pic {
     margin-top: 60px;
-    width: 80%;
+  }
+
+  .footer i {
+    font-size: 40px;
+    padding: 0px 30px 0px 30px;
   }
 }

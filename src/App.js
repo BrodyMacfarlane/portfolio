@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route, Link, Redirect} from 'react-router-dom';
 import Work from './components/work';
 import About from './components/about';
+import './assets/fonts/fa/css/font-awesome.min.css';
 
 class App extends Component {
   constructor(props){
@@ -39,6 +40,14 @@ class App extends Component {
               <Redirect from="/" to="/work" />
               <Route path='/work' render={(routeProps) => (<Work pageCallback={this.getPage} {...routeProps} />)}/>
               <Route path='/about' render={(routeProps) => (<About pageCallback={this.getPage} {...routeProps} />)}/>
+            </div>
+            <div className="footer">
+              <a href="https://www.linkedin.com/in/brodymacfarlane/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/BrodyMacfarlane">
+                <i class="fa fa-github"></i>
+              </a>
             </div>
         </div>
       </BrowserRouter>

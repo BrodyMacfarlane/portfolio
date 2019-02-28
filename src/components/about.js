@@ -16,6 +16,9 @@ export default class About extends Component {
                 <div className="about-content about-text">
                     <h2 className="about-about">ABOUT</h2>
                     <p>I am a web developer/designer who is very passionate about aesthetic, animation, and code hygiene.  I love learning new technologies, innovating ways to conquer real-world problems, and enjoy tackling challenges and venturing into rougher seas.  I love building knowledge of frameworks and libraries, and adapting to the ever-changing industry of software development.</p>
+                    <a href="https://drive.google.com/file/d/1yHWW_nmJk0-38J-WVc2ft_cBBnjO_CEw/view?usp=sharing">
+                        <div className="resume-button">VIEW RESUME</div>
+                    </a>
                 </div>
             </div>
         )
